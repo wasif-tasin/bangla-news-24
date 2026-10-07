@@ -1,13 +1,15 @@
 import Image from 'next/image';
+import NavLinks from './NavLinks';
 
 const HeaderPage = () => {
 
     const date = new Date().toLocaleDateString
         (
             "bn-BD", {
-            dateStyle: 'full'
+            dateStyle: "full"
         }
         )
+    console.log(date)
 
     return (
         <div className=' container mx-auto py-5'>
@@ -30,6 +32,7 @@ const HeaderPage = () => {
                     <button className='btn bg-[#c00107] text-white hover:bg-[#721c1f]'>সাইন আপ</button>
                 </div>
             </div>
+            <NavLinks></NavLinks>
         </div>
     );
 };
