@@ -5,7 +5,7 @@ const HeaderPage = () => {
     const date = new Date().toLocaleDateString
         (
             "bn-BD", {
-            dateStyle: "full"
+            dateStyle: 'full'
         }
         )
 
