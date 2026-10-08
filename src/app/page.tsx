@@ -1,5 +1,6 @@
 import MainNews from "@/components/MainNews";
 import Marquee from "@/components/Marquee";
+import MostRead from "@/components/MostRead";
 import NewsCard from "@/components/NewsCard";
 
 interface IOtherSection {
@@ -47,7 +48,9 @@ export default async function Home() {
           ))}
         </div>
         {/* Most read section */}
-        <div className="col-span-1">j</div>
+        <div className="col-span-1">
+          <MostRead></MostRead>
+        </div>
       </div>
     </div>
   );

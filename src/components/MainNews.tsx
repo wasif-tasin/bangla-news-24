@@ -30,7 +30,7 @@ const MainNews = ({ news }: { news: News[] }) => {
                     <p>{firstnews.description}</p>
                 </div>
             </div>
-            <div className=' ml-6 card w-100 p-0  border-gray-300 rounded-xl'>
+            <div className=' ml-6 card w-11/12 p-0  border-gray-300 rounded-xl'>
                 {
                     othernews.slice(0, 4).map(singlenews =>
                         <div className='border-b border-gray-300 last:border-b-0' key={singlenews.id}>
