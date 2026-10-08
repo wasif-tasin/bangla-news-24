@@ -27,8 +27,6 @@ export default async function Home() {
 
   return (
     <div>
-      <Marquee></Marquee>
-
       <div className=" container mx-auto grid grid-cols-3">
         {/* News section */}
         <div className="col-span-2">

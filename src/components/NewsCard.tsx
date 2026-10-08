@@ -12,14 +12,14 @@ interface News {
 
 const NewsCard = ({ news }: { news: News }) => {
     return (
-        <div className="card w-83 px-0 py-0">
-            <figure>
+        <div className="card w-full px-0 py-0">
+            <figure className="w-full">
                 <Image
                     height={400}
                     width={400}
                     src={news.imageUrl}
                     alt={news.imageAlt}
-                    className='h-full w-full p-0'>
+                    className='h-auto w-full object-cover p-0'>
                 </Image>
             </figure>
             <div className="card-body">

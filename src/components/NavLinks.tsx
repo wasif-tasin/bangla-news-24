@@ -9,7 +9,7 @@ export interface INav {
 }
 
 const NavLinks = async () => {
-    
+
     const response = await fetch("https://news-api-v2.vercel.app/api/categories")
     const data = await response.json();
     const nav: INav[] = data.data;
@@ -18,7 +18,7 @@ const NavLinks = async () => {
     return (
         <div className=" flex gap-5 justify-center mt-3">
             <Link href={'/'}>হোম</Link>
-            {filterNav.map((items, index) => <Link key={index} href={items.slug}>{items.title}</Link>)}
+        {filterNav.map((items, index) => <Link key={index} href={`/category/${items.slug}`}>{items.title}</Link>)}
         </div>
     );
 };
