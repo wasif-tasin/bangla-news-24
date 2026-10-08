@@ -13,7 +13,7 @@ const MainNews = ({ news }: { news: News[] }) => {
     const [firstnews, ...othernews] = news;
     // const othernews = news.slice(1);
     return (
-        <div className='flex mt-8'>
+        <div className='flex mt-8 mb-8'>
             <div className="card w-145 px-0 py-0 ">
                 <figure>
                     <Image
