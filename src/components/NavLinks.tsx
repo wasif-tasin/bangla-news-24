@@ -1,4 +1,4 @@
-import Link from "next/link";
+import NavLinksClient from "./NavLinksClient";
 
 export interface INav {
     slug: string,
@@ -15,12 +15,7 @@ const NavLinks = async () => {
     const nav: INav[] = data.data;
     const filterNav = nav.filter(items => items.scrapable)
 
-    return (
-        <div className=" flex gap-5 justify-center mt-3">
-            <Link href={'/'}>হোম</Link>
-        {filterNav.map((items, index) => <Link key={index} href={`/category/${items.slug}`}>{items.title}</Link>)}
-        </div>
-    );
+    return <NavLinksClient items={filterNav.map(({ slug, title }) => ({ slug, title }))} />;
 };
 
 export default NavLinks;
